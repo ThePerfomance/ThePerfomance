@@ -9,4 +9,4 @@ Android-разработчик. Kotlin, Java, Python, PostgreSQL.
 
 **Контакты:** [Telegram](https://t.me/ThePerfomance)
 
-<img src="assets/runner.svg" alt="Маленький оранжевый персонаж бежит по строке и перепрыгивает баг" width="100%">
+<img src="assets/runner.svg" alt="Оранжевый персонаж бежит от дня к ночи, перепрыгивает баги, проходит тесты и добегает до ветки main" width="100%">
