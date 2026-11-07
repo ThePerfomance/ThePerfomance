@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 84" role="img" aria-label="Маленький оранжевый персонаж бежит по строке и перепрыгивает баг">
+  <style>
+    .run { animation: run 8s linear infinite; }
+    .jump { animation: jump 8s ease-in-out infinite; }
+    .bob { animation: bob .28s steps(2) infinite; }
+    .legs-a { animation: legs-a .28s steps(1) infinite; }
+    .legs-b { animation: legs-b .28s steps(1) infinite; }
+    .bug { animation: bug 8s steps(1) infinite; transform-box: fill-box; transform-origin: center; }
+
+    @keyframes run { from { transform: translateX(-70px); } to { transform: translateX(830px); } }
+    @keyframes jump {
+      0%, 44%, 58%, 100% { transform: translateY(0); }
+      51% { transform: translateY(-34px); }
+    }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(-2px); } }
+    @keyframes legs-a { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes legs-b { 0% { opacity: 0; } 50% { opacity: 1; } }
+    @keyframes bug { 0%, 55% { transform: scaleY(1); } 56%, 100% { transform: scaleY(-1); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .run, .jump, .bob, .legs-a, .legs-b, .bug { animation: none; }
+      .run { transform: translateX(300px); }
+    }
+  </style>
+
+  <path d="M0 76 H800" stroke="#8b949e" stroke-width="2" stroke-dasharray="10 8"/>
+
+  <g class="bug">
+    <rect x="392" y="64" width="16" height="10" fill="#e5534b"/>
+    <rect x="399" y="64" width="2" height="10" fill="#21262d"/>
+    <rect x="388" y="66" width="4" height="4" fill="#21262d"/>
+    <rect x="394" y="74" width="2" height="2" fill="#21262d"/>
+    <rect x="404" y="74" width="2" height="2" fill="#21262d"/>
+  </g>
+
+  <g class="run">
+    <g class="jump">
+      <g transform="translate(0 40) scale(4)">
+        <g class="bob">
+          <rect x="2" y="0" width="10" height="6" fill="#d97757"/>
+          <rect x="0" y="2" width="2" height="2" fill="#d97757"/>
+          <rect x="12" y="2" width="2" height="2" fill="#d97757"/>
+          <rect x="4" y="1" width="1" height="2" fill="#21262d"/>
+          <rect x="9" y="1" width="1" height="2" fill="#21262d"/>
+        </g>
+        <g class="legs-a" fill="#d97757">
+          <rect x="3" y="6" width="1" height="3"/>
+          <rect x="8" y="6" width="1" height="3"/>
+        </g>
+        <g class="legs-b" fill="#d97757">
+          <rect x="5" y="6" width="1" height="3"/>
+          <rect x="10" y="6" width="1" height="3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
