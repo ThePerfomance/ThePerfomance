@@ -2,10 +2,10 @@
 
 Android-разработчик. Kotlin, Java, Python, PostgreSQL.
 
-**Проекты**
+**Основные Проекты:**
 
 - **MPOSService**: платформа обучения для организаций. Android-приложение, веб-версия и сервер на Django
-- **Perfxmance**: платформа живописи с рекомендациями. Клиент на Kotlin Multiplatform, серверы на Ktor и FastAPI
+- **Perfxmance**: платформа живописи с персональными рекомендациями и  компьютерным зрением. Клиент на Kotlin Multiplatform, серверы на Ktor и FastAPI
 
 **Контакты:** [Telegram](https://t.me/ThePerfomance)
 
